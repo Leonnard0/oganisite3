@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+ 
+    }
+    body{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 12.5px;
+        color: #212529;
+    }
+#header{
+    width: 100%;
+    height: 4.9vh;
+    background-color: #f5f5f5;
+    font-size: 110%;
+    font-family: "Cairo",sans-serif;
+ 
+}
+#icons{
+    width: 0.8%;
+}
+nav{
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+   padding-left: 17%;
+   padding-right: 10%;
+
+}
+
+#nav-menu { width: 60%;}
+#nav-menu03 { width: 10%;
+margin-right: 10%;}
+#nav-menu03 svg, #nav-menu03 img { height: 15px;}
+
+#logo{
+    width: 10%;
+    margin-left: 1%;
+}
+#nav-main li{
+    
+    height: 4vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    text-decoration: none
+    
+}
+#nav-main{
+    display: flex;
+    font-size: 14px;
+    color: #252525;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    height: 5vh;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Cairo"sans-serif;
+    justify-content: space-around;
+    margin-right: 15%;
+    list-style: none;
+    text-decoration: none
+    
+}
+#nav-drop{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 400%;
+    opacity: 0;
+    top: 200px;
+    z-index: -99;
+    background-color: black;
+    transition: 0.5s;
+    color: white;
+    font-family: "Cairo", sans-serif;
+    font-size: 10px;
+    text-align: left;
+}
+.pagesLink{
+    text-decoration: none;
+    color: #1c1c1c;
+  
+}
+.pagesLink:hover{
+    color: #7fad39;
+    transition: 0.5s;
+}
+#drop   { position: relative;}
+#drop:hover #nav-drop
+{
+    opacity: 1;
+    z-index: 99;
+    top: 50px;
+}
+#pageslinks{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+#pageslinks:hover{
+    color: #7fad39;
+}
+#list{
+    display: none;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 19% 14% 29% 7% 25%;
+    grid-template-rows: 11% 20% 30% 3% 25%;
+   
+}
+.menu{
+    background-color: #7fad39;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    padding-top: 11px;
+    text-align: center;
+    border-radius: 5px;
+}
+.menulinks{
+text-decoration: none;
+color: #1c1c1c;
+}
+#search{
+    border: solid #f5f5f5;;
+    height: 40px;
+    /* margin-left: 7%; */
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 18px;
+    padding-top: 11px;
+    font-family: "Cairo",sans-serif;
+    display: flex;
+}
+#categPlaceholder{
+  text-align: center;
+  font-size: 16px;
+  color: #b2b2b2;
+  padding-left: 20px;
+  font-weight: 200;
+  border: none;
+  height: 3.5vh;
+  outline: none;
+
+}
+.send{
+    width: 100%;
+    height: 5.9vh;
+    background-color: #7fad39;
+    border: none;
+    text-align: center;
+}
+#cellphone{
+    font-size: 1px;
+    color: #7fad39;
+    height: 55px;
+    width: 55px;
+    background: #f5f5f5;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;
+   display: inline-block;
+   
+}
+#phoneNumber{
+    display: inline-block;
+    font-size: 14px;
+    color: #6f6f6f;
+    margin-left: 5%;
+}
+#options-drop{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    opacity: 0;
+    top: 100px;
+    z-index: -99;
+    background-color: white;
+    transition: 0.5s;
+    color:#1c1c1c;
+    font-family: "Cairo", sans-serif;
+    font-size: 80%;
+    border: solid 1px #f5f5f5;
+    
+    
+}
+#dropOptions   { position: relative;}
+
+#dropOptions:hover #options-drop
+{
+    opacity: 1;
+    z-index: 99;
+    top: 15px;
+  
+}
+.departmentPadding{
+    padding-bottom: 10%;
+    text-align: left;
+    margin-left: 10%;
+    
+}
+#fruitFresh{
+    font-family: "Cairo",sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #7fad39;
+    
+    margin-left: 10%;
+}
+#vegetable{
+    font-family: "Cairo",sans-serif;
+    font-size: 350%;
+    font-weight: 900;
+    margin-left: 10%;
+}
+#delivery{
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 11.5%;
+}
+.shop{
+    font-family: "Cairo", sans-serif;
+   width: 15%;
+    height: 5vh;
+    background-color: #7fad39;
+    border: none;
+    margin-top: 4%;    margin-left: 9%;
+    
+}
+.gridCard{
+  display: inline-block;
+  margin-left: 1.7%;
+  width: 14%;
+  height: 32vh;
+  background-color: #f5f5f5;
+  text-align: center; 
+}
+.espaçamento{
+    width: 15%;
+    height: 1px;
+    background-color: white;
+}
+.fruits{
+    border: none;
+    background-color: white;
+    font-weight: 800;
+    font-size: 150%;
+    margin-top: 78%; 
+    width: 80%;
+    height: 4vh;
+    font-family: "Cairo",sans-serif;  
+}
+#link{
+    text-decoration: none;
+    color: #212529;
+}
+.featured{
+    text-align: center;
+   font-size: 300%;
+   text-decoration: underline;
+}
+.featured-feet{
+    display: grid;
+    grid-template-columns: 0.5fr  repeat(4, 1fr) 0.5fr;
+    grid-template-rows: 170px 75px 170px 75px;
+}
+.fruitsList{
+    font-family: "Cairo",sans-serif;  
+    display: inline-block;
+    color: #212529;
+    margin-left: 2%;
+    font-size: 150%;
+}
+#crabpool{
+    font-weight: 600;
+    font-size: 130%;
+    color: #212529;
+text-decoration: none;
+}
+#a30{
+    font-weight: 800;
+    font-size: 140%;
+}
+#banner{
+    display: inline-block; 
+    margin-left: 2%;
+    width: 30%;
+    height: 29vh;
+   
+}
+#products{
+    display: inline-block;
+}
+
+.btnSeta{
+    background-color: #f5f5f5;
+    width: 20%;
+    height: 10vh;
+}
+.carrosel02{
+    display: inline-block;
+    text-align: justify;
+    width: 6.5%;
+    height: 12vh;
+    margin-left: 14.5%;
+    margin-bottom: 1.3%;
+}
+#crab02{
+    margin-left: 130%;
+    width: 170%;
+    
+}
+#crab03{
+    margin-left: 130%;
+    font-weight: 790;
+    font-size: 150%;
+}
+#blog{
+     width: 20%;
+     height: 27vh;
+     margin-left: 2%;
+     display: inline-block;
+}
+#date{
+    color: #b2b2b2;
+    text-decoration: none;
+    font-size: 150%;
+}
+.descrição{
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 26px;
+}
+#pé{
+    height: 68vh;
+    width: 100%;
+    padding: 0%;
+  
+    background-color: #F3F6FA;;
+}
+.useful{
+    height: 5vh;
+    width: 6.4%;
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 15px;   
+}
+#addres{
+   list-style: none;
+   width: 300%;
+   font-size: 140%;
+
+}
+#finalSection{
+    height: 5vh;
+    width: 30%;
+    display: inline-block;
+    margin-left: 15%;
+
+}
+.joinOur{
+    font-weight: 800;
+    font-size: 150%;
+}
+.getemail{
+    font-size: 120%;
+}
+.email{
+    width: 110%;
+    color: black;
+    height: 5vh;
+    border: solid 1px #ededed;
+    outline: none;
+    text-align: left;
+}
+.subscribe{
+    width: 65%;
+    height: 5vh;
+    background-color: #7fad39;
+    border: none;
+text-align: center;
+}
+#link1{
+    text-decoration: none;
+    color: #212529;
+   margin-bottom: 13%;
+}
+#link2{
+    text-decoration: none;
+    color: #212529;
+   margin-bottom: 21%;
+}
+.button{
+    background-color: white;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+ margin-left: 3%;
+   display: inline-block;
+   width: 16%;
+   height: 4.5vh;
+
+}
+.button:hover
+{
+    transform: rotate(360deg);
+    transition: 0.5s;
+    background-color: #7fad39;
+    fill: white;
+}
+
+.buttonBorder{
+    background-color: white;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+ margin-left: 3%;
+   display: inline-block;
+   width: 8%;
+   height: 4.5vh;
+   border: solid 1px #ededed;
+}
+.aboutLi{
+    position: absolute;
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 1%;
+    font-size: 120%;
+}
+.inline{
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 15px;
+}
+#copyright{
+    margin-left: 19%;
+    color: #6f6f6f;
+    font-size: 140%;
+}
+#linkcolor{
+    text-decoration: none;
+    color: #007bff;
+}
+#linkcolor:hover{
+    color: white;
+}
+
+#pipe{
+    color: #b2b2b2;
+    margin-left: 4%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#allCateg{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+#searchBtn{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+    height: 60vh;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    margin-right: 10px;
+    /* background-color: #e3f2e1; */
+    padding: 10px;
+    border: solid 1px #e6e6e6;
+    border-radius: 20px ;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header .search {
+    display: flex;
+    gap: 10px;
+}
+
+.main {
+    grid-area: main;
+    padding-top: 90px;
+    background-color: #f8f8f8;
+}
+
+.main .ad {
+    background-color: #fff;
+    /* padding: 20px; */
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main .ad img {
+    width: 100%;
+    max-width: 400px;
+    /* margin-top: 20px; */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.margin-top50{
+    margin-top: 50px;
+}
+
+.margin-top20{
+    margin-top: 20px;
+}
+.margin-top150{
+    margin-top: 500px;
+}
+
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
